@@ -54,6 +54,6 @@ int[,] myMatrix = IsCreatMatrix(m, n);
 IsPrintMatrix(myMatrix);
 
 double[] res = IsAVG(myMatrix, m, n);
-Console.WriteLine($"[{string.Join("; ", res)}]");
+Console.WriteLine($"Среднее арифметическое каждого столбца:[{string.Join("; ", res)}]");
 
 
