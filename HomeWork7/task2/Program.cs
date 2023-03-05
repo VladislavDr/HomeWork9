@@ -51,5 +51,15 @@ IsPrintMatrix(myMatrix);
 
 int m1 = IsReadNumber("Введите строку, из которой надо вытащить число");
 int n1 = IsReadNumber("Введите столбец, из которого надо вытащить число");
-int res = IsSearchNumber(myMatrix, m1 ,n1);
-Console.WriteLine(res);
+while(m < m1 || n < n1){
+    Console.WriteLine();
+    Console.WriteLine("Внимание! Вы ввели значение элемента массива, которого нет в текущем массиве.");
+    Console.WriteLine("Попробуй снова!");
+    Console.WriteLine();
+    m1 = IsReadNumber("Введите строку, из которой надо вытащить число");
+    n1 = IsReadNumber("Введите столбец, из которого надо вытащить число");
+}
+//else {
+    int res = IsSearchNumber(myMatrix, m1 ,n1);
+    Console.WriteLine(res);
+//}
